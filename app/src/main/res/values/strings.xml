@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NUMAD19F-YangyuqiChang</string>
+    <string name="action_settings">Settings</string>
+    <string name="convert_string">Convert</string>
+    <string name="about">about</string>
+    <string name="welcome_to_my_android_app">Welcome to my Android App!</string>
+</resources>
