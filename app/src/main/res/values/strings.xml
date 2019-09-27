@@ -7,4 +7,7 @@
     <string name="it_is_a_link_collector">it_is_a_link_collector</string>
     <string name="insert">insert</string>
     <string name="insert_link_here">insert_link_here</string>
+    <string name="link_collector">Link Collector</string>
+    <string name="write_here">Write here</string>
+    <string name="link">It is a link collector!</string>
 </resources>
