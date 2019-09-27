@@ -1,5 +1,6 @@
 package com.newApp.numad19f_yangyuqichang;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        button = (Button)findViewById(R.id.button2);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                openLinkCollector();
+            }
+        });
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void openLinkCollector() {
+        Intent intent = new Intent(this, LinkCollector.class);
+        startActivity(intent);
+    }
     public void buttonOnClick(View v) {
         Button button=(Button) v;
         ((Button) v).setText("Yangyuqi chang\n changyyq@gmail.com");

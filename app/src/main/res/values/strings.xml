@@ -4,4 +4,7 @@
     <string name="convert_string">Convert</string>
     <string name="about">about</string>
     <string name="welcome_to_my_android_app">Welcome to my Android App!</string>
+    <string name="it_is_a_link_collector">it_is_a_link_collector</string>
+    <string name="insert">insert</string>
+    <string name="insert_link_here">insert_link_here</string>
 </resources>
