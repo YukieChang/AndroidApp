@@ -10,4 +10,9 @@
     <string name="link_collector">Link Collector</string>
     <string name="write_here">Write here</string>
     <string name="link">It is a link collector!</string>
+    <string name="put_link_name_here">Put Link Name Here</string>
+    <string name="insertlinkhere">Insert Link Here</string>
+    <string name="insert_name_here">insert_name_here</string>
+    <string name="why_you_don_t_update">Why you don\'t update</string>
+    <string name="Insert_Link_Here">Insert Link Here</string>
 </resources>
