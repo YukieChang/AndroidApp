@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextClock;
 import android.os.PowerManager.WakeLock;
@@ -24,6 +25,7 @@ public class Timer extends AppCompatActivity implements View.OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+
 
         // attach the listener to both buttons
         findViewById(R.id.start).setOnClickListener(this);
