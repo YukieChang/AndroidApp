@@ -14,6 +14,7 @@ import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 public class ShowLocation extends AppCompatActivity {
@@ -30,6 +31,8 @@ public class ShowLocation extends AppCompatActivity {
         setContentView(R.layout.activity_show_location);
 
         t = findViewById(R.id.textView);
+
+
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -50,6 +53,7 @@ public class ShowLocation extends AppCompatActivity {
 
             }
 
+
             @Override
             public void onProviderDisabled(String s) {
 
@@ -61,6 +65,7 @@ public class ShowLocation extends AppCompatActivity {
 
         configure_button();
     }
+
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
