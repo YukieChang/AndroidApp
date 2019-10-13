@@ -26,5 +26,8 @@
     <string name="button">Button</string>
     <string name="start">start</string>
     <string name="stop">stop</string>
+    <string name="show_location">Show Location</string>
+    <string name="request_lcation">Request Lcation</string>
+    <string name="lattitude_longitude">Lattitude, Longitude:</string>
 
 </resources>

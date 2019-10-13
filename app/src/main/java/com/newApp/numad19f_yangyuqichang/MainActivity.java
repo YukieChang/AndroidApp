@@ -90,6 +90,17 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+    });
+
+    button = (Button)findViewById(R.id.button5);
+        button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v){
+            openShowLocation();
+
+
+        }
+
     });}
     public void openPrimeNumber() {
         Intent intent = new Intent(this, PrimeNumber.class);
@@ -105,7 +116,12 @@ public class MainActivity extends AppCompatActivity {
     public void openLink() {
         Intent intent = new Intent(this, Link.class);
         startActivity(intent);
-    };
+    }
+
+    public void openShowLocation() {
+        Intent intent = new Intent(this, ShowLocation.class);
+        startActivity(intent);
+    }
 
 
 
