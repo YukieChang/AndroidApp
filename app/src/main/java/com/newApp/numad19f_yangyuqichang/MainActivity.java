@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
                                       @Override
                                       public void onClick(View v) {
-                                          openLink();
+                                          openLinkCollector();
                                       }
                                   });
 
@@ -113,8 +113,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openLink() {
-        Intent intent = new Intent(this, Link.class);
+    public void openLinkCollector() {
+        Intent intent = new Intent(this, LinkCollector.class);
         startActivity(intent);
     }
 

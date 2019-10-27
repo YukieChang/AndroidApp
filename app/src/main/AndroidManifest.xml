@@ -23,6 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ShowLocation"></activity>
+        <activity android:name=".LinkCollector"></activity>
+        <activity android:name=".ListDataActivity"></activity>
+        <activity android:name=".EditDataActivity"></activity>
 
         <receiver
             android:name=".AlarmReceiver"
@@ -35,6 +38,7 @@
 
         <activity android:name=".PrimeNumber" />
 
+
         <service
             android:name=".AlarmService"
             android:enabled="true"
@@ -42,6 +46,7 @@
 
         <activity android:name=".Timer" />
         <activity android:name=".Link" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -52,6 +57,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
