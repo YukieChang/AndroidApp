@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class EditData extends AppCompatActivity {
 
     private static final String TAG = "EditData";
-
     private Button btnOpen,btnDelete;
     private EditText editable_item;
 
