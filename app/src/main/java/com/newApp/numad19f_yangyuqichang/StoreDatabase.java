@@ -72,19 +72,6 @@ public class StoreDatabase extends SQLiteOpenHelper {
         return data;
     }
 
-      //update database
-
-    public void updateName(String newName, int id, String oldName){
-        SQLiteDatabase db = this.getWritableDatabase();
-        String query = "UPDATE " + TABLE_NAME + " SET " + COLUME2 +
-                " = '" + newName + "' WHERE " + COLUME1 + " = '" + id + "'" +
-                " AND " + COLUME2 + " = '" + oldName + "'";
-        Log.d(TAG, "updateName: query: " + query);
-        Log.d(TAG, "updateName: Setting name to " + newName);
-        db.execSQL(query);
-    }
-
-
      // Delete from database
 
     public void deleteName(int id, String name){
