@@ -24,8 +24,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ShowLocation"></activity>
         <activity android:name=".LinkCollector"></activity>
-        <activity android:name=".ListDataActivity"></activity>
-        <activity android:name=".EditDataActivity"></activity>
+        <activity android:name=".ListData"></activity>
+        <activity android:name=".EditData"></activity>
 
         <receiver
             android:name=".AlarmReceiver"

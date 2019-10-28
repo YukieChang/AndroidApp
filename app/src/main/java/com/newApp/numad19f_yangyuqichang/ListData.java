@@ -20,11 +20,11 @@ import java.util.ArrayList;
  * Created by User on 2/28/2017.
  */
 
-public class ListDataActivity extends AppCompatActivity {
+public class ListData extends AppCompatActivity {
 
-    private static final String TAG = "ListDataActivity";
+    private static final String TAG = "ListData";
 
-    DatabaseHelper mDatabaseHelper;
+    StoreDatabase mStoreDatabase;
 
     private ListView mListView;
 
@@ -33,7 +33,7 @@ public class ListDataActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_linkcollector);
         mListView = (ListView) findViewById(R.id.listView);
-        mDatabaseHelper = new DatabaseHelper(this);
+        mStoreDatabase = new StoreDatabase(this);
 
         populateListView();
     }
@@ -42,7 +42,7 @@ public class ListDataActivity extends AppCompatActivity {
         Log.d(TAG, "populateListView: Displaying data in the ListView.");
 
         //get the data and append to a list
-        Cursor data = mDatabaseHelper.getData();
+        Cursor data = mStoreDatabase.getData();
         ArrayList<String> listData = new ArrayList<>();
         while(data.moveToNext()){
             //get the value from the database in column 1
@@ -60,14 +60,14 @@ public class ListDataActivity extends AppCompatActivity {
                 String name = adapterView.getItemAtPosition(i).toString();
                 Log.d(TAG, "onItemClick: You Clicked on " + name);
 
-                Cursor data = mDatabaseHelper.getItemID(name); //get the id associated with that name
+                Cursor data = mStoreDatabase.getItemID(name); //get the id associated with that name
                 int itemID = -1;
                 while(data.moveToNext()){
                     itemID = data.getInt(0);
                 }
                 if(itemID > -1){
                     Log.d(TAG, "onItemClick: The ID is: " + itemID);
-                    Intent editScreenIntent = new Intent(ListDataActivity.this, EditDataActivity.class);
+                    Intent editScreenIntent = new Intent(ListData.this, EditData.class);
                     editScreenIntent.putExtra("id",itemID);
                     editScreenIntent.putExtra("name",name);
                     startActivity(editScreenIntent);

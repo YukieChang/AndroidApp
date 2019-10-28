@@ -5,6 +5,14 @@
                 android:layout_height="match_parent">
 
 
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="387dp"
+        android:layout_height="294dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
     <EditText
         android:textAlignment="center"
         android:layout_width="match_parent"
@@ -14,7 +22,8 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="78dp"
-        android:id="@+id/editable_item"/>
+        android:id="@+id/editable_item"
+        android:autofillHints="" />
     <LinearLayout
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
@@ -29,13 +38,13 @@
             android:layout_marginTop="10dp"
             android:text="DELETE"
             android:id="@+id/btnDelete"/>
+
         <Button
+            android:id="@+id/btnOpen"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="SAVE"
-            android:layout_toRightOf="@+id/btnDelete"
-            android:id="@+id/btnSave"/>
+            android:text="@string/openlink" />
 
     </LinearLayout>
 
